@@ -84,8 +84,6 @@
         // Map subcontainer jQuery object
         self.$map = $("." + self.options.map.cssClass, self.container);
 
-        console.log(self);
-        console.log(self.options.map.cssClass);
 
         // Save initial HTML content (used by destroy method)
         self.initialMapHTMLContent = self.$map.html();
@@ -2614,7 +2612,7 @@
                     },
                     attrsHover: {
                         "stroke-width": 0,
-                        animDuration: 300
+                        animDuration: 0
                     },
                     text: {
                         position: "right",
