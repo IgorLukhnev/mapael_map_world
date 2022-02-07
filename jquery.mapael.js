@@ -84,6 +84,9 @@
         // Map subcontainer jQuery object
         self.$map = $("." + self.options.map.cssClass, self.container);
 
+        console.log(self);
+        console.log(self.options.map.cssClass);
+
         // Save initial HTML content (used by destroy method)
         self.initialMapHTMLContent = self.$map.html();
 
@@ -2577,7 +2580,7 @@
                 defaultArea: {
                     attrs: {
                         fill: "#343434",
-                        stroke: "#5d5d5d",
+                        stroke: "#343434",
                         "stroke-width": 1,
                         "stroke-linejoin": "round"
                     },
@@ -2610,7 +2613,7 @@
                         "stroke-linejoin": "round"
                     },
                     attrsHover: {
-                        "stroke-width": 3,
+                        "stroke-width": 0,
                         animDuration: 300
                     },
                     text: {
